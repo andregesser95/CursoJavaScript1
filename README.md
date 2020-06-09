@@ -1,2 +1,3 @@
-# CursoJavaScript1
-Curso de JavaScript: introdução a Orientação a Objetos
+# Curso de JavaScript: Introdução a Orientação a Objetos
+
+- Repetição de código;
