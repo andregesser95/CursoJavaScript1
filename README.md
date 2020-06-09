@@ -7,3 +7,14 @@ Atividades desenvolvidas neste treinamento:
 - Modularizando código;
 - Acessando Atributos privados; e
 - Construtores e estáticos.
+
+
+# Curso de JavaScript: Interfaces e Herança em Orientação a Objetos
+
+Atividades desenvolvidas neste treinamento:
+
+- Conhecendo o problema do cliente;
+- Herança;
+- Classes abstratas;
+- Sistema interno;
+- Interfaces e Duck Type;
