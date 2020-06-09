@@ -3,3 +3,4 @@
 Atividades desenvolvidas neste treinamento:
 
 - Repetição de código;
+- Adicionando comportamentos;
