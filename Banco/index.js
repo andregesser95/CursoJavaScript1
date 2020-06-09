@@ -5,14 +5,27 @@ class Cliente {
 
 class ContaCorrete {
     agencia;
-    saldo;
+    _saldo = 0;
 
     sacar(valor) {
-        if (this.saldo > valor) {
-            this.saldo -= valor;
+        if (this._saldo > valor) {
+            this._saldo -= valor;
         } else {
-            console.log('Saldo inferior ao valor de saque!!');            
+            console.log('Saldo insuficiente!!');
         }
+        return valor;
+    }
+
+    depositar(valor) {
+        if (valor < 0) {
+            console.log('Valor inválido!');
+            return;
+        }
+        this._saldo += valor;
+    }
+
+    get saldo() {
+        return this._saldo;
     }
 }
 
@@ -25,17 +38,14 @@ cliente2.nome = 'Alice';
 cliente2.cpf = '89548798575';
 
 const contaCorrentRicardo = new ContaCorrete();
-contaCorrentRicardo.saldo = 0;
 contaCorrentRicardo.agencia = 1001;
-console.log(contaCorrentRicardo.saldo);
 
-contaCorrentRicardo.saldo = 100;
-console.log(contaCorrentRicardo.saldo);
+contaCorrentRicardo.depositar(100);
+contaCorrentRicardo.depositar(100);
+contaCorrentRicardo.depositar(100);
+let valorSacado = contaCorrentRicardo.sacar(50);
 
-let valorSacado = 50;
-contaCorrentRicardo.sacar(valorSacado);
-console.log(contaCorrentRicardo.saldo);
+console.log(valorSacado);
+console.log(contaCorrentRicardo);
 
-console.log(cliente1);
-console.log(cliente2);
 

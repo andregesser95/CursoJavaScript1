@@ -4,3 +4,4 @@ Atividades desenvolvidas neste treinamento:
 
 - Repetição de código;
 - Adicionando comportamentos;
+- Modularizando código;
